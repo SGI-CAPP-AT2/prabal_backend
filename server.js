@@ -43,7 +43,7 @@ async function authenticate(req, res, next) {
     res.status(401).send("Unauthorized");
   }
 }
-app.post("/health", async (req, res) => {
+app.get("/health", async (req, res) => {
   res.send("healthy");
 });
 // Add User
